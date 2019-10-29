@@ -1,6 +1,6 @@
 $(function() {
   
-
+//console.log ($(".list-group-item"));
   $("#navbarDropdown").click(function(){
    $(".dropdown-menu").toggle(); 
   })
@@ -25,7 +25,11 @@ $(function() {
     $(this).addClass('active')
   })
 
+  $("#playVideo").click(function(){
+    $("#video").get(0).play(); 
+      setTimeout(function(){("#video")},10000);
+  });
 
-  //console.log ($(".list-group-item"));
+  
 });
 
