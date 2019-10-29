@@ -29,7 +29,20 @@ $(function() {
     $("#video").get(0).play(); 
       setTimeout(function(){("#video")},10000);
   });
+//ce que je souhaite faire dans mon cv
+  $('#myTab a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
 
-  
+  $("#showModal").click(function(){
+    $("#modal").show();
+  })
+$(".close,#close").click(function(){
+  $("#modal").hide();
+});
+
+$("#popover").popover();
+
 });
 
