@@ -14,14 +14,18 @@ $(function() {
     $("#searchResult").html(value)
   })
 
- 
-
  $("#replaceTitle").click(function(){
    var value = Math.floor(Math.random() * 6) + 1 
     $(".display-4").text("web developer"+value);
 
   });
 
+  $(".list-group-item").click(function(){
+    $(this).siblings().removeClass('active')
+    $(this).addClass('active')
+  })
 
+
+  //console.log ($(".list-group-item"));
 });
 
